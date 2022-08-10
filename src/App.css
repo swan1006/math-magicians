@@ -16,9 +16,10 @@ body {
 
 .displayNum {
   width: 100%;
-  padding: 1.5rem 0.2rem;
+  padding: 1.5rem 0.5rem;
   text-align: end;
   background-color: rgb(10, 166, 161);
+  color: #eee;
 }
 
 .displayNum::placeholder {
