@@ -5,34 +5,38 @@
 }
 
 body {
-  padding: 1rem;
+  padding: 7%;
+  background-color: #eee;
 }
 
 .calculator-div {
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: rgb(10, 166, 161) 2px solid;
+  border-radius: 1rem;
+  padding: 0.7rem;
 }
 
 .displayNum {
   width: 100%;
   padding: 1.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: end;
   background-color: rgb(10, 166, 161);
   color: #eee;
-}
-
-.displayNum::placeholder {
-  color: #eee;
-  font-weight: bold;
-  font-size: 1rem;
+  border: #2b2d41 2px solid;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 4rem;
 }
 
 .calculatorButtons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #2b2d41;
-  padding: 0.3rem;
+  padding: 0.2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 button {
@@ -44,6 +48,7 @@ button {
 button:hover {
   cursor: pointer;
   border: rgb(10, 166, 161) 1px solid;
+  background-color: hsl(235, 17%, 28%);
   border-radius: 5%;
 }
 
