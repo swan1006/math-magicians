@@ -32,3 +32,23 @@ test('Test the functionality for pressing the buttons whithout operation', () =>
   expect(result.next).toBe('201');
   expect(result.total).toBe(null);
 });
+
+test('Test the functionality for pressing the 0 button after + operation', () => {
+  const obj = {
+    total: 10,
+    next: 0,
+    operation: '+',
+  };
+  const result = calculate(obj, '0');
+  expect(result.total).toBe(10);
+});
+
+test('Test the functionality for pressing the = button after an operation', () => {
+  const obj = {
+    total: 10,
+    next: 5,
+    operation: '-',
+  };
+  const result = calculate(obj, '=');
+  expect(result.total).toBe('5');
+});
