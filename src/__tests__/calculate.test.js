@@ -1,4 +1,4 @@
-import calculate from '../calculate';
+import calculate from '../logic/calculate';
 
 test('Test the functionality for AC button', () => {
   const obj = {
